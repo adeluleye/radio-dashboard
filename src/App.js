@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import NavBar from '../src/components/navBar';
-import SideBar from '../src/components/sideBar';
+import NavBar from './components/navBar';
+import SideBar from './components/sideBar';
+import Footer from './components/footer';
 import './App.css';
 
 class App extends Component {
@@ -17,14 +18,7 @@ class App extends Component {
               <br/><br/><br/><br/><br/><br/><br/><br/>
               <br/><br/><br/><br/><br/><br/><br/><br/>
             </div>
-            <footer class="sticky-footer bg-white">
-              <div class="container my-auto">
-                <div class="copyright text-center my-auto">
-                  <span>Copyright &copy; RadioPack 2019. </span>
-                  All Rights Reserved.
-                </div>
-              </div>
-            </footer>
+            <Footer />
           </div>
         </div>
         <a class="scroll-to-top rounded" href="#page-top">
