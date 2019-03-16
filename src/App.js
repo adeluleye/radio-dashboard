@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import NavBar from '../src/components/navBar';
+import SideBar from '../src/components/sideBar';
 import './App.css';
 
 class App extends Component {
@@ -7,7 +8,7 @@ class App extends Component {
     return (
       <React.Fragment>
         <div id="wrapper">
-          Sidebar
+          <SideBar />
           <div id="content-wrapper" class="d-flex flex-column">
             <div id="content">
               <NavBar/>
