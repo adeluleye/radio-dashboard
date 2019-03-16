@@ -4,15 +4,15 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+import '@fortawesome/fontawesome-free/css/all.css';
 import 'bootstrap/dist/css/bootstrap.css';
-import 'font-awesome/css/font-awesome.css';
 import './dashboard.css';
 
 import 'jquery/dist/jquery';
 import 'bootstrap/dist/js/bootstrap.bundle';
 import 'jquery.easing/jquery.easing';
 import 'popper.js/dist/popper';
-// import './dashboard';
+import './dashboard';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

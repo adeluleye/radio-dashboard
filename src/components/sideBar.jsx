@@ -15,7 +15,7 @@ const SideBar = () => {
     
           <li class="nav-item active">
             <a class="nav-link" href="index.html">
-              <i class="fa fa-fw fa-tachometer"></i>
+              <i class="fa fa-fw fa-tachometer-alt"></i>
               <span>Dashboard</span></a>
           </li>
     
@@ -82,7 +82,7 @@ const SideBar = () => {
     
           <li class="nav-item">
             <a class="nav-link" href="charts.html">
-              <i class="fa fa-fw fa-area-chart"></i>
+              <i class="fa fa-fw fa-chart-area"></i>
               <span>Charts</span></a>
           </li>
     

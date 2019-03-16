@@ -64,7 +64,7 @@ const NavBar = () => {
                 <a class="dropdown-item d-flex align-items-center" href="#">
                   <div class="mr-3">
                     <div class="icon-circle bg-success">
-                      <i class="fa fa-money text-white"></i>
+                      <i class="fa fa-donate text-white"></i>
                     </div>
                   </div>
                   <div>
@@ -162,7 +162,7 @@ const NavBar = () => {
                 </a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                  <i class="fa fa-sign-out fa-sm fa-fw mr-2 text-gray-400"></i>
+                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                   Logout
                 </a>
               </div>
