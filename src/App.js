@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Route, Redirect, Switch } from 'react-router-dom';
 import NavBar from './components/navBar';
 import SideBar from './components/sideBar';
 import Footer from './components/footer';
@@ -16,11 +17,15 @@ class App extends Component {
               <NavBar/>
             </div>
             <div className="container-fluid">
-              <br/><br/><br/><br/><br/><br/><br/><br/>
-              <br/><br/><br/><br/><br/><br/><br/><br/>
-              <br/><br/><br/><br/><br/><br/><br/><br/>
-              <br/><br/><br/><br/><br/><br/><br/><br/>
-              <br/><br/><br/><br/><br/><br/><br/><br/>
+              <Switch>
+                
+                <Redirect exact from="/" to="/radios" />
+                <br/><br/><br/><br/><br/><br/><br/><br/>
+                <br/><br/><br/><br/><br/><br/><br/><br/>
+                <br/><br/><br/><br/><br/><br/><br/><br/>
+                <br/><br/><br/><br/><br/><br/><br/><br/>
+                <br/><br/><br/><br/><br/><br/><br/><br/>
+            </Switch>
             </div>
             <Footer />
           </div>
