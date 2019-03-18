@@ -8,12 +8,16 @@ import * as serviceWorker from './serviceWorker';
 import '@fortawesome/fontawesome-free/css/all.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import './dashboard.css';
+import 'datatables.net-bs4/css/dataTables.bootstrap4.min.css';
 
-import 'jquery/dist/jquery';
+//import 'jquery/dist/jquery';
 import 'bootstrap/dist/js/bootstrap.bundle';
 import 'jquery.easing/jquery.easing';
-import 'popper.js/dist/popper';
-require('./dashboard');
+//import 'popper.js/dist/popper';
+import './dashboard';
+import 'datatables.net/js/jquery.dataTables.min.js';
+import 'datatables.net-bs4/js/dataTables.bootstrap4.min.js';
+import './dataTables';
 
 ReactDOM.render(
     <BrowserRouter>

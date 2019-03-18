@@ -1,6 +1,5 @@
 import jQuery from 'jquery/dist/jquery';
 
-
 (function($) {
     //"use strict"; // Start of use strict
   
