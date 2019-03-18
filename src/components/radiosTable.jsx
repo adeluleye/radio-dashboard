@@ -15,13 +15,11 @@ class RadiosTable extends Component {
     ];
 
     render() { 
-        const { radios, onSort, sortColumn } = this.props;
+        const { radios } = this.props;
         return ( 
             <Table 
                 columns={this.columns}
-                data={radios}
-                sortColumn={sortColumn}
-                onSort={onSort}
+                data={radios}    
             /> 
         );
     }

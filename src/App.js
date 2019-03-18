@@ -26,10 +26,6 @@ class App extends Component {
                   <Redirect exact from="/" to="/radios" />
                   <Redirect exact to="/not-found" />
                 </Switch>
-                <br/><br/><br/><br/><br/><br/><br/><br/><br/>
-                <br/><br/><br/><br/><br/><br/><br/><br/><br/>
-                <br/><br/><br/><br/><br/><br/><br/><br/><br/>
-                <br/><br/><br/><br/><br/><br/><br/><br/><br/>
               </div>
             </div>
             <Footer />

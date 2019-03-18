@@ -9,7 +9,9 @@ class Radios extends Component {
 
     async componentDidMount() {
         
-        const { data: radios } = await getRadios();
+        const result = await getRadios();
+        const { ONLINE_RADIO: radios } = result.data;
+        // console.log(radios);
         this.setState({ radios: radios});
     }
 
