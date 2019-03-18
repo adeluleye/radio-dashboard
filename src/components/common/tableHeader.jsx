@@ -1,16 +1,22 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const TableHeader = () => {
-    return ( 
+class TableHeader extends Component {
+    render() {
+      return (
         <thead>
-            <tr>
-                <th>name</th>
-                <th>city</th>
-                <th>url</th>
-                <th>frequency</th>
-            </tr>
-        </thead> 
-    );
-}
- 
+          <tr>
+            {this.props.columns.map(column => (
+              <th
+                key={column.path || column.key}
+              >
+                {column.label}
+              </th>
+            ))}
+          </tr>
+        </thead>
+      );
+    }
+  }
+  
 export default TableHeader;
+  
