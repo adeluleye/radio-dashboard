@@ -1,70 +1,77 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const SideBar = () => {
     return ( 
-        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+        <ul className="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
     
-          <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-            <div class="sidebar-brand-icon rotate-n-15">
-              <i class="fa fa-laugh-wink"></i>
+          <Link className="sidebar-brand d-flex align-items-center justify-content-center" to="/">
+            <div className="sidebar-brand-icon rotate-n-15">
+              <i className="fa fa-laugh-wink"></i>
             </div>
-            <div class="sidebar-brand-text mx-3">RadioPack <sup>2</sup></div>
-          </a>
+            <div className="sidebar-brand-text mx-3">RadioPack <sup>2</sup></div>
+          </Link>
     
-          <hr class="sidebar-divider my-0"/>
+          <hr className="sidebar-divider my-0"/>
     
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html">
-              <i class="fa fa-fw fa-tachometer-alt"></i>
-              <span>Dashboard</span></a>
+          <li className="nav-item active">
+            <Link className="nav-link" to="/">
+              <i className="fa fa-fw fa-tachometer-alt"></i>
+              <span>Dashboard</span>
+            </Link>
           </li>
     
-          <hr class="sidebar-divider"/>
+          <hr className="sidebar-divider"/>
     
-          <div class="sidebar-heading">
+          <div className="sidebar-heading">
             Interface
           </div>
     
-          <li class="nav-item">
-            <a class="nav-link" href="charts.html">
-              <i class="fa fa-fw fa-list"></i>
-              <span>City</span></a>
+          <li className="nav-item">
+            <Link className="nav-link" to="/cities">
+              <i className="fa fa-fw fa-list"></i>
+              <span>City</span>
+            </Link>
           </li>
     
-          <li class="nav-item">
-            <a class="nav-link" href="tables.html">
-              <i class="fas fa-fw fa-music"></i>
-              <span>Radio</span></a>
+          <li className="nav-item">
+            <Link className="nav-link" to="/radios">
+              <i className="fas fa-fw fa-music"></i>
+              <span>Radio</span>
+            </Link>
           </li>
           
-          <li class="nav-item">
-            <a class="nav-link" href="tables.html">
-              <i class="fa fa-fw fa-list"></i>
-              <span>Category</span></a>
+          <li className="nav-item">
+            <Link className="nav-link" to="/categories">
+              <i className="fa fa-fw fa-list"></i>
+              <span>Category</span>
+            </Link>
           </li>
 
-          <hr class="sidebar-divider"/>
+          <hr className="sidebar-divider"/>
           
-          <div class="sidebar-heading">
+          <div className="sidebar-heading">
             Addons
           </div>
           
-          <li class="nav-item">
-            <a class="nav-link" href="tables.html">
-              <i class="fa fa-fw fa-table"></i>
-              <span>Theme</span></a>
+          <li className="nav-item">
+            <Link className="nav-link" to="/themes">
+              <i className="fa fa-fw fa-table"></i>
+              <span>Theme</span>
+            </Link>
           </li>
           
-          <li class="nav-item">
-            <a class="nav-link" href="tables.html">
-              <i class="fa fa-fw fa-cog"></i>
-              <span>Settings</span></a>
+          <li className="nav-item">
+            <Link className="nav-link" to="/settings">
+              <i className="fa fa-fw fa-cog"></i>
+              <span>Settings</span>
+            </Link>
           </li>
     
-          <hr class="sidebar-divider d-none d-md-block"/>
+          <hr className="sidebar-divider d-none d-md-block"/>
     
-          <div class="text-center d-none d-md-inline">
-            <button class="rounded-circle border-0" id="sidebarToggle"></button>
+          <div className="text-center d-none d-md-inline">
+            <button className="rounded-circle border-0" id="sidebarToggle"></button>
           </div>
     
         </ul>

@@ -13,7 +13,7 @@ import 'jquery/dist/jquery';
 import 'bootstrap/dist/js/bootstrap.bundle';
 import 'jquery.easing/jquery.easing';
 import 'popper.js/dist/popper';
-import './dashboard';
+require('./dashboard');
 
 ReactDOM.render(
     <BrowserRouter>

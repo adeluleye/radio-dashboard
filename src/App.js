@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import NavBar from './components/navBar';
 import SideBar from './components/sideBar';
 import Footer from './components/footer';
+import ScrollToTop from './components/scrollToTop';
 import './App.css';
 
 class App extends Component {
@@ -10,20 +11,21 @@ class App extends Component {
       <React.Fragment>
         <div id="wrapper">
           <SideBar />
-          <div id="content-wrapper" class="d-flex flex-column">
+          <div id="content-wrapper" className="d-flex flex-column">
             <div id="content">
               <NavBar/>
             </div>
-            <div class="container-fluid">
+            <div className="container-fluid">
+              <br/><br/><br/><br/><br/><br/><br/><br/>
+              <br/><br/><br/><br/><br/><br/><br/><br/>
+              <br/><br/><br/><br/><br/><br/><br/><br/>
               <br/><br/><br/><br/><br/><br/><br/><br/>
               <br/><br/><br/><br/><br/><br/><br/><br/>
             </div>
             <Footer />
           </div>
         </div>
-        <a class="scroll-to-top rounded" href="#page-top">
-          <i class="fa fa-angle-up"></i>
-        </a>
+        <ScrollToTop />
       </React.Fragment>
     );
   }
