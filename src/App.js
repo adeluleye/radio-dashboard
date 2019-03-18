@@ -4,6 +4,7 @@ import NavBar from './components/navBar';
 import SideBar from './components/sideBar';
 import Footer from './components/footer';
 import ScrollToTop from './components/scrollToTop';
+import Radios from './components/radios';
 import NotFound from './components/notFound';
 import './App.css';
 
@@ -19,8 +20,9 @@ class App extends Component {
             </div>
             <div className="container-fluid">
               <Switch>
+                <Route path='/radios' component={Radios} />
                 <Route path='/not-found' component={NotFound} />
-                <Redirect exact from="/" to="/" />
+                <Redirect exact from="/" to="/radios" />
                 <Redirect exact to="/not-found" />
               </Switch>
             </div>
