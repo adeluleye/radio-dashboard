@@ -3,13 +3,14 @@ import TableHeader from './tableHeader';
 import TableFoot from './tableFoot';
 import TableBody from './tableBody';
 
-const Table = ({ columns, data }) => {
+const Table = ({ columns, data, message }) => {
+    console.log(message);
     return ( 
         <React.Fragment>
-            <h1 className="h3 mb-2 text-gray-800">Radios</h1>
+            <h1 className="h3 mb-2 text-gray-800">{message}</h1>
             <div className="card shadow mb-4">
                 <div className="card-header py-3">
-                    <h6 className="m-0 font-weight-bold text-primary">List of Radio Stations</h6>
+                    <h6 className="m-0 font-weight-bold text-primary">List of Radio {message}</h6>
                 </div>
                 <div className="card-body">
                     <div className="table-responsive">

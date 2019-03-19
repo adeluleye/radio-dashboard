@@ -15,11 +15,12 @@ class RadiosTable extends Component {
     ];
 
     render() { 
-        const { radios } = this.props;
+        const { radios, message } = this.props;
         return ( 
             <Table 
                 columns={this.columns}
-                data={radios}    
+                data={radios} 
+                message={message}   
             /> 
         );
     }

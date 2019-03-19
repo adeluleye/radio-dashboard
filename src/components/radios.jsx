@@ -4,30 +4,33 @@ import { getRadios } from '../services/radioService';
 
 class Radios extends Component {
     state = { 
-        radios: []
+        radios: [],
+        message: ''
     }
 
     async componentDidMount() {
         
         const result = await getRadios();
-        const { ONLINE_RADIO: radios } = result.data;
+        const { ONLINE_RADIO: radios, message } = result.data;
         // console.log(radios);
-        this.setState({ radios: radios});
+        this.setState({ radios: radios, message});
     }
 
     getPagedData = () => {
         const {
-          radios: radios
+          radios: radios,
+          message: message
         } = this.state;
 
-        return { data: radios };
+        return { data: radios, message };
     };
 
     render() { 
-        const { data: radios } = this.getPagedData();
+        const { data: radios, message } = this.getPagedData();
         return ( 
             <RadiosTable
                 radios={radios}
+                message={message}
             /> 
         );
     }
