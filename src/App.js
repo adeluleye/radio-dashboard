@@ -9,6 +9,7 @@ import Radios from './components/radios';
 import Cities from './components/cities';
 import Themes from './components/themes';
 import './App.css';
+import Settings from './components/settings';
 
 class App extends Component {
   render() {
@@ -21,6 +22,7 @@ class App extends Component {
               <NavBar/>
               <div className="container-fluid">
                 <Switch>
+                  <Route path='/settings' component={Settings} />
                   <Route 
                     path='/themes' 
                     render={props => <Themes {...props} />} />
