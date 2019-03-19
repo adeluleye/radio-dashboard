@@ -8,8 +8,9 @@ import NotFound from './components/notFound';
 import Radios from './components/radios';
 import Cities from './components/cities';
 import Themes from './components/themes';
-import './App.css';
 import Settings from './components/settings';
+import AppSettings from './components/appSettings';
+import './App.css';
 
 class App extends Component {
   render() {
@@ -22,6 +23,7 @@ class App extends Component {
               <NavBar/>
               <div className="container-fluid">
                 <Switch>
+                  <Route path='/settings/:id' component={AppSettings} />
                   <Route path='/settings' component={Settings} />
                   <Route 
                     path='/themes' 
