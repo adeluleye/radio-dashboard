@@ -7,6 +7,7 @@ import ScrollToTop from './components/scrollToTop';
 import NotFound from './components/notFound';
 import Radios from './components/radios';
 import Cities from './components/cities';
+import Themes from './components/themes';
 import './App.css';
 
 class App extends Component {
@@ -20,6 +21,9 @@ class App extends Component {
               <NavBar/>
               <div className="container-fluid">
                 <Switch>
+                  <Route 
+                    path='/themes' 
+                    render={props => <Themes {...props} />} />
                   <Route 
                     path='/cities' 
                     render={props => <Cities {...props} />} />
