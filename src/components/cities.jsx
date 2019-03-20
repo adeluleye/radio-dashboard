@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { getCities } from '../services/cityService';
 import CitiesTable from './citiesTable';
+import AddButton from './common/addButton';
 
 class Cities extends Component {
     state = { 
@@ -27,10 +28,16 @@ class Cities extends Component {
     render() { 
         const { data: cities, message } = this.getPagedData();
         return ( 
-            <CitiesTable
-                cities={cities}
-                message={message}
-            /> 
+            <React.Fragment>
+                <AddButton 
+                    link='/cities/new'
+                    value='Add City'
+                />
+                <CitiesTable
+                    cities={cities}
+                    message={message}
+                />
+            </React.Fragment>
         );
     }
 }

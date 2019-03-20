@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { getThemes } from '../services/themeService';
 import ThemesTable from './themesTables';
+import AddButton from './common/addButton';
 
 class Themes extends Component {
     state = { 
@@ -27,10 +28,16 @@ class Themes extends Component {
     render() { 
         const { data: themes, message } = this.getPagedData();
         return ( 
-            <ThemesTable
-                themes={themes}
-                message={message}
-            /> 
+            <React.Fragment>
+                <AddButton 
+                    link='/themes/new'
+                    value='Add Theme'
+                />
+                <ThemesTable
+                    themes={themes}
+                    message={message}
+                />
+            </React.Fragment>
         );
     }
 }

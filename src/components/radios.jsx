@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import RadiosTable from './radiosTable';
 import { getRadios } from '../services/radioService';
+import AddButton from './common/addButton';
 
 class Radios extends Component {
     state = { 
@@ -28,10 +29,16 @@ class Radios extends Component {
     render() { 
         const { data: radios, message } = this.getPagedData();
         return ( 
-            <RadiosTable
-                radios={radios}
-                message={message}
-            /> 
+            <React.Fragment>
+                <AddButton 
+                    link='/radios/new'
+                    value='Add Radio Station'
+                />
+                <RadiosTable
+                    radios={radios}
+                    message={message}
+                /> 
+            </React.Fragment>
         );
     }
 }
