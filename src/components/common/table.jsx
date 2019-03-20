@@ -4,7 +4,7 @@ import TableFoot from './tableFoot';
 import TableBody from './tableBody';
 
 const Table = ({ columns, data, message }) => {
-    console.log(message);
+    // console.log(message);
     return (        
         <div className="card shadow mb-4">
                 <div className="card-header py-3">

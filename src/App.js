@@ -11,6 +11,7 @@ import Themes from './components/themes';
 import Settings from './components/settings';
 import AppSettings from './components/appSettings';
 import CityForm from './components/cityForm';
+import ThemeForm from './components/themeForm';
 import './App.css';
 
 class App extends Component {
@@ -27,6 +28,9 @@ class App extends Component {
                   <Route 
                     path='/cities/:id' 
                     component={CityForm} />
+                  <Route 
+                    path='/themes/:id' 
+                    component={ThemeForm} />
                   <Route path='/settings/:id' component={AppSettings} />
                   <Route path='/settings' component={Settings} />
                   <Route 
