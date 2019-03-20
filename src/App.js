@@ -10,6 +10,7 @@ import Cities from './components/cities';
 import Themes from './components/themes';
 import Settings from './components/settings';
 import AppSettings from './components/appSettings';
+import CityForm from './components/cityForm';
 import './App.css';
 
 class App extends Component {
@@ -23,6 +24,9 @@ class App extends Component {
               <NavBar/>
               <div className="container-fluid">
                 <Switch>
+                  <Route 
+                    path='/cities/:id' 
+                    component={CityForm} />
                   <Route path='/settings/:id' component={AppSettings} />
                   <Route path='/settings' component={Settings} />
                   <Route 
