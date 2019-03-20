@@ -2,6 +2,7 @@ import React from 'react';
 import Joi from 'joi-browser';
 import Form from './common/form';
 import { getTheme, saveTheme } from '../services/themeService';
+import 'jscolor-picker/jscolor';
 
 class ThemeForm extends Form {
     state = {
@@ -73,8 +74,8 @@ class ThemeForm extends Form {
             <div>
                 <form onSubmit={this.handleSubmit}>
                     {this.renderInput('name', 'Name')}
-                    {this.renderInput('color1', 'Color1')}
-                    {this.renderInput('color2', 'Color2')}
+                    {this.renderInput('color1', 'Color1', 'form-control jscolor')}
+                    {this.renderInput('color2', 'Color2', 'form-control jscolor')}
                     {this.renderButton('Save')}
                 </form>
             </div>
